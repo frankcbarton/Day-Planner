@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <title>Day Planner</title>
+    </head>
+    
+    <body>
+        <style>
+            * {
+                font-family: Helvetica;
+                text-align: center;
+            }
+            input{
+                width: 100px;
+            }
+            button{
+                width: 80px;
+                height: 35px;
+            }
+        </style>
+        <br>
+        <h1>Day Planner</h1>
+        <h2>Productivity starts here!</h2>
+        <br>
+        <body>
+            Start Time: <input id="startHour" placeholder="hour">:
+                <input id="startMinute" placeholder="minute">
+                <input id="startPm" placeholder="AM/PM">
+            &ensp;
+            End Time: <input id="endHour" placeholder="hour">:
+                <input id="endMinute" placeholder="minute">
+                <input id="endPm" placeholder="AM/PM">
+            <hr>
+
+            Meal Times and Durations:
+            <br>
+            breakfast: <input id="breakfastHour" placeholder="hour">:
+                <input id="breakfastMinute" placeholder="minute"> &nbsp;
+                <input id="breakfastDuration" placeholder="duration (min)">
+            &ensp;
+            lunch: <input id="lunchHour" placeholder="hour">:
+                <input id="lunchMinute" placeholder="minute">
+                <input id="lunchPm" placeholder="AM/PM"> &nbsp;
+                <input id="lunchDuration" placeholder="duration (min)">
+            &ensp;
+            dinner: <input id="dinnerHour" placeholder="hour">:
+                <input id="dinnerMinute" placeholder="minute"> &nbsp;
+                <input id="dinnerDuration" placeholder="duration (min)">
+            <hr>
+
+            Number of Workouts: <input id="numWorkouts" placeholder="0 to 2">
+            <br>
+            Workout Times and Durations (leave extra workouts empty):
+            <br>
+            workout 1: <input id="workout1Hour" placeholder="hour">:
+                <input id="workout1Minute" placeholder="minute">
+                <input id="workout1Pm" placeholder="AM/PM"> &nbsp;
+                <input id="workout1Duration" placeholder="duration (min)">
+            &ensp;
+            workout 2: <input id="workout2Hour" placeholder="hour">:
+                <input id="workout2Minute" placeholder="minute">
+                <input id="workout2Pm" placeholder="AM/PM"> &nbsp;
+                <input id="workout2Duration" placeholder="duration (min)">
+            <hr>
+        
+            Nap Desired: <input id="napDesired" placeholder="yes or no">
+            <br>
+            Nap Time and Duration (leave blank if no nap desired):
+            <input id="napHour" placeholder="hour">:
+                <input id="napMinute" placeholder="minute">
+                <input id="napPm" placeholder="AM/PM"> &nbsp;
+                <input id="napDuration" placeholder="duration (min)">
+            <hr>
+
+            Number of Other Scheduled Events: <input id="numOtherEvents" placeholder="0 to 5">
+            <br>
+            Event Times and Durations:
+            <br>
+            event 1: <input id="otherEvent1Name" placeholder="name"> &nbsp;
+                <input id="otherEvent1Hour" placeholder="hour">:
+                <input id="otherEvent1Minute" placeholder="minute">
+                <input id="otherEvent1Pm" placeholder="AM/PM"> &nbsp;
+                <input id="otherEvent1Duration" placeholder="duration (min)">
+            &ensp;
+            event 2: <input id="otherEvent2Name" placeholder="name"> &nbsp;
+                <input id="otherEvent2Hour" placeholder="hour">:
+                <input id="otherEvent2Minute" placeholder="minute">
+                <input id="otherEvent2Pm" placeholder="AM/PM"> &nbsp;
+                <input id="otherEvent2Duration" placeholder="duration (min)">
+                &ensp;
+            event 3: <input id="otherEvent3Name" placeholder="name"> &nbsp;
+                <input id="otherEvent3Hour" placeholder="hour">:
+                <input id="otherEvent3Minute" placeholder="minute">
+                <input id="otherEvent3Pm" placeholder="AM/PM"> &nbsp;
+                <input id="otherEvent3Duration" placeholder="duration (min)">
+                &ensp;
+            event 4: <input id="otherEvent4Name" placeholder="name"> &nbsp;
+                <input id="otherEvent4Hour" placeholder="hour">:
+                <input id="otherEvent4Minute" placeholder="minute">
+                <input id="otherEvent4Pm" placeholder="AM/PM"> &nbsp;
+                <input id="otherEvent4Duration" placeholder="duration (min)">
+                &ensp;
+            event 5: <input id="otherEvent5Name" placeholder="name"> &nbsp;
+                <input id="otherEvent5Hour" placeholder="hour">:
+                <input id="otherEvent5Minute" placeholder="minute">
+                <input id="otherEvent5Pm" placeholder="AM/PM"> &nbsp;
+                <input id="otherEvent5Duration" placeholder="duration (min)">
+            <br>
+            <hr>
+            
+            Number of Tasks: <input id="numTasks" placeholder="0 to 10">
+            <br>
+            Event Duration, Urgency, Difficulty, Interest, & Physical Exertion (higher numbers correlate with more of each characteristic)
+            <br> 
+            task 1: <input id="task1Name" placeholder="name"> &nbsp;
+                <input id="task1Duration" placeholder="duration (min)"> &nbsp;
+                <input id="task1Urgency" placeholder="urgency (1-3)"> &nbsp;
+                <input id="task1Difficulty" placeholder="difficulty (1-5)">
+                <input id="task1Interest" placeholder="interest (1-5)">
+                <input id="task1PhysEx" placeholder="exertion (1-5)"> &nbsp;
+            task 2: <input id="task2Name" placeholder="name"> &nbsp;
+                <input id="task2Duration" placeholder="duration (min)"> &nbsp;
+                <input id="task2Urgency" placeholder="urgency (1-3)"> &nbsp;
+                <input id="task2Difficulty" placeholder="difficulty (1-5)">
+                <input id="task2Interest" placeholder="interest (1-5)">
+                <input id="task2PhysEx" placeholder="exertion (1-5)"> &nbsp;
+            task 3: <input id="task3Name" placeholder="name"> &nbsp;
+                <input id="task3Duration" placeholder="duration (min)"> &nbsp;
+                <input id="task3Urgency" placeholder="urgency (1-3)"> &nbsp;
+                <input id="task3Difficulty" placeholder="difficulty (1-5)">
+                <input id="task3Interest" placeholder="interest (1-5)">
+                <input id="task3PhysEx" placeholder="exertion (1-5)"> &nbsp;
+            task 4: <input id="task4Name" placeholder="name"> &nbsp;
+                <input id="task4Duration" placeholder="duration (min)"> &nbsp;
+                <input id="task4Urgency" placeholder="urgency (1-3)"> &nbsp;
+                <input id="task4Difficulty" placeholder="difficulty (1-5)">
+                <input id="task4Interest" placeholder="interest (1-5)">
+                <input id="task4PhysEx" placeholder="exertion (1-5)"> &nbsp;
+            task 5: <input id="task5Name" placeholder="name"> &nbsp;
+                <input id="task5Duration" placeholder="duration (min)"> &nbsp;
+                <input id="task5Urgency" placeholder="urgency (1-3)"> &nbsp;
+                <input id="task5Difficulty" placeholder="difficulty (1-5)">
+                <input id="task5Interest" placeholder="interest (1-5)">
+                <input id="task5PhysEx" placeholder="exertion (1-5)"> &nbsp;
+            task 6: <input id="task6Name" placeholder="name"> &nbsp;
+                <input id="task6Duration" placeholder="duration (min)"> &nbsp;
+                <input id="task6Urgency" placeholder="urgency (1-3)"> &nbsp;
+                <input id="task6Difficulty" placeholder="difficulty (1-5)">
+                <input id="task6Interest" placeholder="interest (1-5)">
+                <input id="task6PhysEx" placeholder="exertion (1-5)"> &nbsp;
+            task 7: <input id="task7Name" placeholder="name"> &nbsp;
+                <input id="task7Duration" placeholder="duration (min)"> &nbsp;
+                <input id="task7Urgency" placeholder="urgency (1-3)"> &nbsp;
+                <input id="task7Difficulty" placeholder="difficulty (1-5)">
+                <input id="task7Interest" placeholder="interest (1-5)">
+                <input id="task7PhysEx" placeholder="exertion (1-5)"> &nbsp;
+            task 8: <input id="task8Name" placeholder="name"> &nbsp;
+                <input id="task8Duration" placeholder="duration (min)"> &nbsp;
+                <input id="task8Urgency" placeholder="urgency (1-3)"> &nbsp;
+                <input id="task8Difficulty" placeholder="difficulty (1-5)">
+                <input id="task8Interest" placeholder="interest (1-5)">
+                <input id="task8PhysEx" placeholder="exertion (1-5)"> &nbsp;
+            task 9: <input id="task9Name" placeholder="name"> &nbsp;
+                <input id="task9Duration" placeholder="duration (min)"> &nbsp;
+                <input id="task9Urgency" placeholder="urgency (1-3)"> &nbsp;
+                <input id="task9Difficulty" placeholder="difficulty (1-5)">
+                <input id="task9Interest" placeholder="interest (1-5)">
+                <input id="task9PhysEx" placeholder="exertion (1-5)"> &nbsp;
+            task 10: <input id="task10Name" placeholder="name"> &nbsp;
+                <input id="task10Duration" placeholder="duration (min)"> &nbsp;
+                <input id="task10Urgency" placeholder="urgency (1-3)"> &nbsp;
+                <input id="task10Difficulty" placeholder="difficulty (1-5)">
+                <input id="task10Interest" placeholder="interest (1-5)">
+                <input id="task10PhysEx" placeholder="exertion (1-5)"> &nbsp;
+            <hr>
+            <button onclick="main()" id = "button">Done</button>
+            <br>
+            <br>
+            <h2>Schedule:</h2>
+            <p id="output"></p>
+        </body>
+        <script src="Main.js"></script>
+    </body>
+</html>
